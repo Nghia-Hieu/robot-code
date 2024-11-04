@@ -18,7 +18,7 @@ Library    Browser
     
 
 Test Selector
-    New Browser    chromium    headless=No
+    New Browser    chromium    headless=Yes
     Set Browser Timeout    999 sec
     New Context
     New Page     https://staging.tracnghiemtinhcach.vn
