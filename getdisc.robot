@@ -5,7 +5,7 @@ Library    Browser
 *** Test Cases *** 
 
 # Test Eight Components
-#     New Browser    chromium    headless=No
+#     New Browser    chromium    headless=Yes
 #     # New Context    viewport={'width': 1600, 'height': 960}
 #     # Set Browser Timeout    10 sec
 
