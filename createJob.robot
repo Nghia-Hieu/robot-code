@@ -174,5 +174,4 @@ Create a Job
 
     #6. Review
     Click    xpath=//div[@class='header-title']//span[text()='Review and Post']
-    Scroll To Element    xpath=//button[text()='Post']
     Sleep    2s
