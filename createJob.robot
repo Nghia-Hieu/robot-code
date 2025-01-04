@@ -10,7 +10,7 @@ ${current_year}     Evaluate    import datetime; datetime.datetime.now().strftim
 ${current_date}    Evaluate    import datetime; datetime.datetime.now().strftime('%Y-%m-%d')
 *** Test Cases *** 
 Create a Job
-    New Browser    chromium    headless=No
+    New Browser    chromium    headless=Yes
     Set Browser Timeout    999 sec
     ${har} =    Create Dictionary     path=D:/RobotCode/report/discHar.file   omitContent=True
     New Context    recordHar=${har}    
