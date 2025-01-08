@@ -11,7 +11,7 @@ ${current_date}    Evaluate    import datetime; datetime.datetime.now().strftime
 *** Test Cases *** 
 Create a Job
     New Browser    chromium    headless=Yes
-    Set Browser Timeout    999 sec
+    Set Browser Timeout    60 sec
     ${har} =    Create Dictionary     path=D:/RobotCode/report/discHar.file   omitContent=True
     New Context    recordHar=${har}    
     New Page     https://d3f8foaty9qexz.cloudfront.net/login
