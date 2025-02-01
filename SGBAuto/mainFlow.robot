@@ -6,8 +6,8 @@ Library    OperatingSystem
 
 *** Test Cases *** 
 Create a Bill
-    New Browser    chromium    headless=No
-    Set Browser Timeout    9 sec
+    New Browser    chromium    headless=Yes
+    Set Browser Timeout    29 sec
     #${har} =    Create Dictionary     path=D:/RobotCode/report/discHar.file   omitContent=True
     #New Context    recordHar=${har}    
     New Page     https://saigonbooks-staging.goldenowl.asia/
