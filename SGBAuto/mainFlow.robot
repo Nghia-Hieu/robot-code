@@ -15,13 +15,13 @@ Create a Bill
     # Search a book
     Type Text    [id="search-input"]    Trứng
     Wait For Elements State    xpath=//a[@class='header-search-suggest-result-item' and @data-title='Thế Giới Trong Quả Trứng']    visible
-    Sleep    0.5s
+    Sleep    1s
     Click    xpath=//a[@class='header-search-suggest-result-item' and @data-title='Thế Giới Trong Quả Trứng']
     Sleep    1s
     Click    xpath=//span[text()='Thêm vào giỏ hàng']
 
     Type Text    [id="search-input"]    Bình Minh
-    Sleep    0.5s
+    Sleep    1s
     Wait For Elements State    xpath=//a[@class='header-search-suggest-result-item' and @data-title='Như Ánh Bình Minh Chuyển Mình Rực Rỡ']    visible
     Click    xpath=//a[@class='header-search-suggest-result-item' and @data-title='Như Ánh Bình Minh Chuyển Mình Rực Rỡ']
     Sleep    1.5s
@@ -32,7 +32,7 @@ Create a Bill
     Click    xpath=//span[text()='Thêm vào giỏ hàng']
     Click    xpath=//a[text()="Xem giỏ hàng"]
     Sleep    1s
-    Click    xpath=//input[@type='checkbox' and contains(@class, 'cart__select-all')]
+    Click    xpath=(//input[@type='checkbox' and contains(@class, 'cursor-pointer bg-primary border border-grey-300 cart__select-all')])[2]
     Click    xpath=(//a[@href='https://saigonbooks-staging.goldenowl.asia/checkout/'])
     Sleep    1s
     Click    xpath=//a[@id="change-address"]
